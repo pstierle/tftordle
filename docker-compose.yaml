@@ -15,7 +15,7 @@ services:
       retries: 5
 
   backend:
-    build: /tftordle-be
+    build: tftordle-be
     ports:
       - "3000:3000"
     environment:
@@ -30,6 +30,6 @@ services:
         condition: service_healthy
 
   frontend:
-    build: /tftordle-fe
+    build: tftordle-fe
     ports:
       - "80:80"
