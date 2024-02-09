@@ -19,7 +19,7 @@ services:
     ports:
       - "3000:3000"
     environment:
-      HOST_URL: "http://localhost:3000"
+      HOST_URL: "http://138.68.103.79:3000"
       DB_HOST: "database"
       DB_USER: "postgres"
       DB_PASSWORD: "postgres"
