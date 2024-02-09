@@ -1,0 +1,47 @@
+<div class="relative">
+  <input
+    placeholder="Search Champions"
+    [disabled]="!!(isFinished$ | async)"
+    [(ngModel)]="query"
+    (ngModelChange)="handleChange()"
+    class="px-4 py-2 rounded-sm w-full disabled:cursor-not-allowed"
+  />
+
+  <div
+    class="flex items-center justify-between gap-4 mt-3"
+    *ngIf="selectedChampion$ | async as selectedChampion"
+  >
+    <p>
+      <span class="text-gray-400">Selected: </span>
+      <span class="text-blue-600">{{ selectedChampion.name }}</span>
+    </p>
+    <app-button
+      [type]="buttonType.SECONDARY"
+      (click)="checkGuess()"
+      [disabled]="!(selectedChampion$ | async)"
+      [isLoading]="!!(isLoading$ | async)"
+      >Guess</app-button
+    >
+  </div>
+
+  <div
+    class="absolute flex flex-col mt-0 min-w-full w-max max-h-[350px] overflow-auto"
+    appClickOutside
+    (clickOutside)="handleClickOutside()"
+  >
+    <div class="bg-[#14181b]" *ngIf="isLoading$ | async; else results">
+      <app-loading-spinner></app-loading-spinner>
+    </div>
+
+    <ng-template #results>
+      <button
+        *ngFor="let result of queryResults$ | async"
+        (click)="selectChampion(result)"
+        class="flex items-center justify-between gap-3 px-4 py-2 bg-[#14181b] transition-all hover:bg-[#1d2328]"
+      >
+        <span> {{ result.name }} - Set {{ result.set }} </span>
+        <img class="w-9 h-9" [src]="result.icon" [alt]="result.name" />
+      </button>
+    </ng-template>
+  </div>
+</div>

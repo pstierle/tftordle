@@ -1,0 +1,16 @@
+<app-loading-spinner
+  *ngIf="isLoading$ | async; else champion"
+></app-loading-spinner>
+<ng-template #champion>
+  <div
+    *ngIf="guessChampion$ | async as guessChampion"
+    class="flex flex-col justify-center items-center"
+  >
+    <h1>{{ guessChampion.name }} - Set: {{ guessChampion.set }}</h1>
+    <img
+      [src]="guessChampion.icon"
+      alt="Champion Icon"
+      class="w-28 h-28 mt-2"
+    />
+  </div>
+</ng-template>

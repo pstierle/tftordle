@@ -1,0 +1,15 @@
+<app-loading-spinner *ngIf="loading; else content"></app-loading-spinner>
+
+<ng-template #content>
+  <div *ngIf="counter > 0; else clue" class="flex items-center gap-4">
+    <p>?</p>
+    <p>
+      <span class="text-white">{{ label }}</span> in
+      <span class="text-green-600">{{ counter }}</span> tries.
+    </p>
+  </div>
+
+  <ng-template #clue>
+    <ng-content></ng-content>
+  </ng-template>
+</ng-template>

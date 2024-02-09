@@ -1,0 +1,8 @@
+<div
+  class="bg-[#1d2328] flex items-center gap-1 px-2 py-1 h-14"
+  [class.green-border]="match === traitMatch.EXACT"
+  [class.yellow-border]="match === traitMatch.SOME"
+  [class.red-border]="match === traitMatch.WRONG"
+>
+  <p class="text-white font-semibold">{{ value }}</p>
+</div>

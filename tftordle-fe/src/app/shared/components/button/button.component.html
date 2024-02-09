@@ -1,0 +1,10 @@
+<button
+  [class]="type"
+  [disabled]="disabled || isLoading"
+  class="rounded-sm px-4 py-2"
+>
+  <app-loading-spinner *ngIf="isLoading; else content"></app-loading-spinner>
+  <ng-template #content>
+    <ng-content></ng-content>
+  </ng-template>
+</button>

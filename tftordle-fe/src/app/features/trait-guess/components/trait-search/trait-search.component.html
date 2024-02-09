@@ -1,0 +1,49 @@
+<div class="relative">
+  <input
+    placeholder="Search Traits"
+    [disabled]="!!(isFinished$ | async)"
+    [(ngModel)]="query"
+    (ngModelChange)="handleChange()"
+    class="px-4 py-2 rounded-sm w-full disabled:cursor-not-allowed"
+  />
+
+  <div
+    class="flex items-center justify-between gap-4 mt-4"
+    *ngIf="selectedTrait$ | async as selectedTrait"
+  >
+    <div class="flex items-center gap-2">
+      <span class="text-gray-400">Selected: </span>
+      <span class="text-blue-600">{{ selectedTrait.name }}</span>
+      <img class="w-5 h-5" [src]="selectedTrait.icon" alt="Trait Icon" />
+    </div>
+    <app-button
+      [type]="buttonType.SECONDARY"
+      (click)="checkGuess()"
+      [disabled]="!(selectedTrait$ | async)"
+      [isLoading]="!!(isLoading$ | async)"
+      >Guess</app-button
+    >
+  </div>
+
+  <div
+    class="absolute flex flex-col mt-0 w-full max-h-[350px] overflow-auto"
+    appClickOutside
+    (clickOutside)="handleClickOutside()"
+  >
+    <div class="bg-[#14181b]" *ngIf="isLoading$ | async; else results">
+      <app-loading-spinner></app-loading-spinner>
+    </div>
+    <ng-template #results>
+      <button
+        *ngFor="let result of queryResults$ | async"
+        (click)="selectTrait(result)"
+        class="flex items-center justify-between gap-3 px-4 py-2 bg-[#14181b] transition-all hover:bg-[#1d2328]"
+      >
+        <span>
+          {{ result.name }}
+        </span>
+        <img class="w-5 h-5" [src]="result.icon" alt="Trait Icon" />
+      </button>
+    </ng-template>
+  </div>
+</div>

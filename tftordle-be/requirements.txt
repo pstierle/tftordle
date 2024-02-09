@@ -1,0 +1,7 @@
+Flask
+flask-cors
+requests
+python-dotenv
+APScheduler
+Pillow
+psycopg2-binary

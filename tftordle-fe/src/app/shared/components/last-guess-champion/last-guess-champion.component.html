@@ -1,0 +1,6 @@
+<p *ngIf="!!lastGuessChampion">
+  Yesterday's Champion
+  <span class="text-blue-600">#{{ lastGuessChampion.total }}</span> was
+  <span class="text-green-600">{{ lastGuessChampion.champion.name }}</span> Set
+  - {{ lastGuessChampion.champion.set }}.
+</p>

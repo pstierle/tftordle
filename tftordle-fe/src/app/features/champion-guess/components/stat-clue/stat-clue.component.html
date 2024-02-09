@@ -1,0 +1,16 @@
+<app-clue
+  [counter]="(tryCounter$ | async) ?? 0"
+  label="Stat Clue"
+  [loading]="!!(isLoading$ | async)"
+>
+  <div *ngIf="statClue$ | async as statClue">
+    <p>
+      <span class="text-gray-400 text-sm">Traits start with:</span>
+      {{ statClue.traitsFirstChars }}
+    </p>
+    <p>
+      <span class="text-gray-400 text-sm">Set of the Champion:</span>
+      {{ statClue.set }}
+    </p>
+  </div>
+</app-clue>

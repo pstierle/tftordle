@@ -1,0 +1,18 @@
+<app-clue
+  [counter]="(tryCounter$ | async) ?? 0"
+  label="Same Trait Clue"
+  [loading]="!!(isLoading$ | async)"
+>
+  <p class="max-w-[15rem] flex flex-wrap">
+    <span class="text-gray-400 text-sm"
+      >Champion in set with same one Trait:</span
+    >
+    <span
+      *ngFor="
+        let name of (sameTraitClue$ | async)?.championNamesWithSameTrait ?? [];
+        let last = last
+      "
+      >{{ name }}<span *ngIf="!last">,</span>
+    </span>
+  </p>
+</app-clue>

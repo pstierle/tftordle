@@ -1,0 +1,11 @@
+<div class="flex gap-3 flex-col">
+  <div
+    *ngFor="let check of guessChecks$ | async"
+    class="flex items-center justify-between gap-5 px-4 py-2"
+    [class.incorrect]="!check.correct"
+    [ngClass]="{ 'green-border': check.correct, 'red-border': !check.correct }"
+  >
+    <p>{{ check.guess.name }}</p>
+    <img [src]="check.guess.icon" alt="Trait Icon" class="w-6 h-6" />
+  </div>
+</div>

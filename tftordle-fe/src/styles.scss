@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: font;
+  src: url("./assets/fonts/Friz\ Quadrata\ Std\ Medium.otf");
+}
+
+* {
+  color: white;
+  font-family: font;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), no-repeat,
+    url("./assets/images/background.jpg");
+}
+
+$text-accent: #c9a256;
+
+input {
+  background-color: #14181b;
+  border: 2.5px solid #0a6f82;
+  outline: none;
+}
+
+.yellow-border {
+  background-color: rgb(151, 151, 18);
+  border: 2.5px solid;
+  border-color: white;
+  color: white;
+}
+
+.green-border {
+  background-color: #0f7032;
+  border: 2.5px solid;
+  border-color: white;
+  color: white;
+}
+
+.red-border {
+  background-color: #942c2c;
+  border: 2.5px solid;
+  border-color: white;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.logo {
+  h1 {
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 5px;
+    color: #f3b03c;
+  }
+  img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.664);
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes flipInY {
+  0% {
+   transform: perspective(400px) rotateY(90deg);
+   animation-timing-function: ease-in;
+   opacity: 0;
+  }
+  40% {
+   transform: perspective(400px) rotateY(-20deg);
+   animation-timing-function: ease-in;
+  }
+  60%{
+   transform: perspective(400px) rotateY(10deg);
+   opacity: 1;
+  }
+  80%{
+   transform: perspective(400px) rotateY(-5deg);
+  }
+  100%{
+   transform: perspective(400px);
+  }
+}

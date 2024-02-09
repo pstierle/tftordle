@@ -1,0 +1,472 @@
+  {
+    "name": "Aatrox",
+    "set": 9,
+    "cost": 5,
+    "range": 1,
+    "gender": "Male",
+    "traits": ["Darkin", "Juggernaut", "Slayer"]
+  },
+  {
+    "name": "Ahri",
+    "set": 9,
+    "cost": 5,
+    "range": 4,
+    "gender": "Female",
+    "traits": ["Ionia", "Sorcerer"]
+  },
+  {
+    "name": "Akshan",
+    "set": 9,
+    "cost": 3,
+    "range": 4,
+    "gender": "Male",
+    "traits": ["Shurima", "Deadeye"]
+  },
+  {
+    "name": "Aphelios",
+    "set": 9,
+    "cost": 4,
+    "range": 4,
+    "gender": "Male",
+    "traits": ["Targon", "Deadeye"]
+  },
+  {
+    "name": "Ashe",
+    "set": 9,
+    "cost": 2,
+    "range": 4,
+    "gender": "Female",
+    "traits": ["Freljord", "Deadeye"]
+  },
+  {
+    "name": "Azir",
+    "set": 9,
+    "cost": 4,
+    "range": 4,
+    "gender": "Male",
+    "traits": ["Shurima", "Strategist"]
+  },
+  {
+    "name": "BelVeth",
+    "set": 9,
+    "cost": 5,
+    "range": 2,
+    "gender": "Female",
+    "traits": ["Void", "Empress"]
+  },
+  {
+    "name": "Cassiopeia",
+    "set": 9,
+    "cost": 1,
+    "range": 4,
+    "gender": "Female",
+    "traits": ["Noxus", "Shurima", "Invoker"]
+  },
+  {
+    "name": "Cho`Gath",
+    "set": 9,
+    "cost": 1,
+    "range": 1,
+    "gender": "Male",
+    "traits": ["Void", "Bruiser"]
+  },
+  {
+    "name": "Darius",
+    "set": 9,
+    "cost": 3,
+    "range": 1,
+    "gender": "Male",
+    "traits": ["Noxus", "Juggernaut"]
+  },
+  {
+    "name": "Ekko",
+    "set": 9,
+    "cost": 3,
+    "range": 1,
+    "gender": "Male",
+    "traits": ["Piltover", "Zaun", "Rogue"]
+  },
+  {
+    "name": "Galio",
+    "set": 9,
+    "cost": 2,
+    "range": 1,
+    "gender": "Male",
+    "traits": ["Demacia", "Invoker"]
+  },
+  {
+    "name": "Garen",
+    "set": 9,
+    "cost": 3,
+    "range": 1,
+    "gender": "Male",
+    "traits": ["Demacia", "Juggernaut"]
+  },
+  {
+    "name": "Gwen",
+    "set": 9,
+    "cost": 4,
+    "range": 1,
+    "gender": "Female",
+    "traits": ["Shadow Isles", "Slayer"]
+  },
+  {
+    "name": "Heimerdinger",
+    "set": 9,
+    "cost": 5,
+    "range": 4,
+    "gender": "Male",
+    "traits": ["Yordle", "Piltover", "Technogenius"]
+  },
+  {
+    "name": "Irelia",
+    "set": 9,
+    "cost": 1,
+    "range": 1,
+    "gender": "Female",
+    "traits": ["Challenger", "Ionia"]
+  },
+  {
+    "name": "Jarvan IV",
+    "set": 9,
+    "cost": 4,
+    "range": 1,
+    "gender": "Male",
+    "traits": ["Demacia", "Strategist"]
+  },
+  {
+    "name": "Jayce",
+    "set": 9,
+    "cost": 3,
+    "range": 4,
+    "gender": "Male",
+    "traits": ["Piltover", "Gunner"]
+  },
+  {
+    "name": "Jhin",
+    "set": 9,
+    "cost": 1,
+    "range": 4,
+    "gender": "Male",
+    "traits": ["Ionia", "Deadeye"]
+  },
+  {
+    "name": "Jinx",
+    "set": 9,
+    "cost": 2,
+    "range": 4,
+    "gender": "Female",
+    "traits": ["Zaun", "Gunner"]
+  },
+  {
+    "name": "K`Sante",
+    "set": 9,
+    "cost": 5,
+    "range": 1,
+    "gender": "Male",
+    "traits": ["Shurima", "Bastion"]
+  },
+  {
+    "name": "Kai`Sa",
+    "set": 9,
+    "cost": 4,
+    "range": 4,
+    "gender": "Female",
+    "traits": ["Void", "Challenger"]
+  },
+  {
+    "name": "Kalista",
+    "set": 9,
+    "cost": 3,
+    "range": 4,
+    "gender": "Female",
+    "traits": ["Shadow Isles", "Challenger"]
+  },
+  {
+    "name": "Karma",
+    "set": 9,
+    "cost": 3,
+    "range": 4,
+    "gender": "Female",
+    "traits": ["Ionia", "Invoker"]
+  },
+  {
+    "name": "Kassadin",
+    "set": 9,
+    "cost": 2,
+    "range": 1,
+    "gender": "Male",
+    "traits": ["Void", "Bastion"]
+  },
+  {
+    "name": "Katarina",
+    "set": 9,
+    "cost": 3,
+    "range": 1,
+    "gender": "Female",
+    "traits": ["Noxus", "Rogue"]
+  },
+  {
+    "name": "Kayle",
+    "set": 9,
+    "cost": 1,
+    "range": 4,
+    "gender": "Female",
+    "traits": ["Demacia", "Slayer"]
+  },
+  {
+    "name": "Kled",
+    "set": 9,
+    "cost": 2,
+    "range": 1,
+    "gender": "Male",
+    "traits": ["Noxus", "Yordle", "Slayer"]
+  },
+  {
+    "name": "Lissandra",
+    "set": 9,
+    "cost": 3,
+    "range": 2,
+    "gender": "Female",
+    "traits": ["Freljord", "Invoker"]
+  },
+  {
+    "name": "Lux",
+    "set": 9,
+    "cost": 4,
+    "range": 4,
+    "gender": "Female",
+    "traits": ["Demacia", "Sorcerer"]
+  },
+  {
+    "name": "Malzahar",
+    "set": 9,
+    "cost": 1,
+    "range": 4,
+    "gender": "Male",
+    "traits": ["Void", "Sorcerer"]
+  },
+  {
+    "name": "Maokai",
+    "set": 9,
+    "cost": 1,
+    "range": 1,
+    "gender": "Male",
+    "traits": ["Shadow Isles", "Bastion"]
+  },
+  {
+    "name": "Nasus",
+    "set": 9,
+    "cost": 4,
+    "range": 1,
+    "gender": "Male",
+    "traits": ["Shurima", "Juggernaut"]
+  },
+  {
+    "name": "Orianna",
+    "set": 9,
+    "cost": 1,
+    "range": 4,
+    "gender": "Female",
+    "traits": ["Piltover", "Sorcerer"]
+  },
+  {
+    "name": "Poppy",
+    "set": 9,
+    "cost": 1,
+    "range": 1,
+    "gender": "Female",
+    "traits": ["Demacia", "Yordle", "Bastion"]
+  },
+  {
+    "name": "Rek`Sai",
+    "set": 9,
+    "cost": 3,
+    "range": 1,
+    "gender": "Female",
+    "traits": ["Void", "Bruiser"]
+  },
+  {
+    "name": "Renekton",
+    "set": 9,
+    "cost": 1,
+    "range": 1,
+    "gender": "Male",
+    "traits": ["Shurima", "Bruiser"]
+  },
+  {
+    "name": "Ryze",
+    "set": 9,
+    "cost": 5,
+    "range": 4,
+    "gender": "Male",
+    "traits": ["Wanderer", "Invoker"]
+  },
+  {
+    "name": "Samira",
+    "set": 9,
+    "cost": 1,
+    "range": 4,
+    "gender": "Female",
+    "traits": ["Noxus", "Challenger"]
+  },
+  {
+    "name": "Sejuani",
+    "set": 9,
+    "cost": 4,
+    "range": 1,
+    "gender": "Female",
+    "traits": ["Freljord", "Bruiser"]
+  },
+  {
+    "name": "Senna",
+    "set": 9,
+    "cost": 5,
+    "range": 4,
+    "gender": "Female",
+    "traits": ["Shadow Isles", "Gunner", "Redeemer"]
+  },
+  {
+    "name": "Sett",
+    "set": 9,
+    "cost": 2,
+    "range": 1,
+    "gender": "Male",
+    "traits": ["Ionia", "Juggernaut"]
+  },
+  {
+    "name": "Shen",
+    "set": 9,
+    "cost": 4,
+    "range": 1,
+    "gender": "Male",
+    "traits": ["Ionia", "Bastion", "Invoker"]
+  },
+  {
+    "name": "Sion",
+    "set": 9,
+    "cost": 5,
+    "range": 1,
+    "gender": "Male",
+    "traits": ["Noxus", "Bruiser"]
+  },
+  {
+    "name": "Sona",
+    "set": 9,
+    "cost": 3,
+    "range": 4,
+    "gender": "Female",
+    "traits": ["Demacia", "Multicaster"]
+  },
+  {
+    "name": "Soraka",
+    "set": 9,
+    "cost": 2,
+    "range": 4,
+    "gender": "Female",
+    "traits": ["Targon", "Invoker"]
+  },
+  {
+    "name": "Swain",
+    "set": 9,
+    "cost": 2,
+    "range": 1,
+    "gender": "Male",
+    "traits": ["Noxus", "Sorcerer", "Strategist"]
+  },
+  {
+    "name": "Taliyah",
+    "set": 9,
+    "cost": 2,
+    "range": 4,
+    "gender": "Female",
+    "traits": ["Shurima", "Multicaster"]
+  },
+  {
+    "name": "Taric",
+    "set": 9,
+    "cost": 3,
+    "range": 1,
+    "gender": "Male",
+    "traits": ["Targon", "Bastion", "Sorcerer"]
+  },
+  {
+    "name": "Teemo",
+    "set": 9,
+    "cost": 2,
+    "range": 1,
+    "gender": "Male",
+    "traits": ["Yordle", "Multicaster", "Strategist"]
+  },
+  {
+    "name": "Tristana",
+    "set": 9,
+    "cost": 1,
+    "range": 1,
+    "gender": "Female",
+    "traits": ["Yordle", "Gunner"]
+  },
+  {
+    "name": "Urgot",
+    "set": 9,
+    "cost": 4,
+    "range": 1,
+    "gender": "Male",
+    "traits": ["Zaun", "Deadeye"]
+  },
+  {
+    "name": "Vel`Koz",
+    "set": 9,
+    "cost": 3,
+    "range": 1,
+    "gender": "Male",
+    "traits": ["Void", "Multicaster", "Sorcerer"]
+  },
+  {
+    "name": "Vi",
+    "set": 9,
+    "cost": 2,
+    "range": 1,
+    "gender": "Female",
+    "traits": ["Piltover", "Bruiser"]
+  },
+  {
+    "name": "Viego",
+    "set": 9,
+    "cost": 1,
+    "range": 1,
+    "gender": "Male",
+    "traits": ["Shadow Isles", "Rogue"]
+  },
+  {
+    "name": "Warwick",
+    "set": 9,
+    "cost": 2,
+    "range": 1,
+    "gender": "Male",
+    "traits": ["Zaun", "Challenger", "Juggernaut"]
+  },
+  {
+    "name": "Yasuo",
+    "set": 9,
+    "cost": 4,
+    "range": 1,
+    "gender": "Male",
+    "traits": ["Ionia", "Challenger"]
+  },
+  {
+    "name": "Zed",
+    "set": 9,
+    "cost": 2,
+    "range": 1,
+    "gender": "Male",
+    "traits": ["Ionia", "Rogue", "Slayer"]
+  },
+  {
+    "name": "Zeri",
+    "set": 9,
+    "cost": 4,
+    "range": 4,
+    "gender": "Female",
+    "traits": ["Zaun", "Gunner"]
+  }

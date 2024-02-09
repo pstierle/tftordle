@@ -1,0 +1,52 @@
+<table class="border-separate border-spacing-2">
+  <tr>
+    <th>Champion</th>
+    <th>Cost</th>
+    <th>Gender</th>
+    <th>Range</th>
+    <th>Set</th>
+    <th>Traits</th>
+  </tr>
+  <tr *ngFor="let check of sorted$ | async">
+    <td>
+      <div>
+        <img class="w-14 h-14" [src]="check.guess.icon" [alt]="check.guess.name" />
+      </div>
+    </td>
+    <td [appShowAfter]="500">
+      <app-number-match
+        [value]="check.guess.cost"
+        [match]="check.cost"
+        class="show-500"
+      ></app-number-match>
+    </td>
+    <td [appShowAfter]="1000">
+      <app-trait-match
+        [value]="check.guess.gender"
+        [match]="check.gender"
+        class="show-500"
+      ></app-trait-match>
+    </td>
+    <td [appShowAfter]="1500">
+      <app-number-match
+        [value]="check.guess.range"
+        [match]="check.range"
+        class="show-1000"
+      ></app-number-match>
+    </td>
+    <td [appShowAfter]="2000">
+      <app-number-match
+        [value]="check.guess.set"
+        [match]="check.set"
+        class="show-1500"
+      ></app-number-match>
+    </td>
+    <td [appShowAfter]="2500">
+      <app-trait-match
+        [value]="getTraitNames(check.guess.traits)"
+        [match]="check.traits"
+        class="show-2000"
+      ></app-trait-match>
+    </td>
+  </tr>
+</table>

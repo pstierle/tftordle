@@ -1,0 +1,16 @@
+<div class="flex flex-col gap-5 justify-center items-center">
+  <div class="bg-green-700 py-5 px-8 rounded border-[3.5px] border-green-500">
+    <div class="flex flex-col gap-2 items-center justify-center">
+      <h2 class="text-3xl">VICTORY!</h2>
+      <ng-content></ng-content>
+
+      <p class="text-sm border-b-2 pb-1 border-white">
+        Number of tries: {{ guessCheckCount }}
+      </p>
+      <p class="text-lg">Next Champion in:</p>
+      <h2 class="text-2xl" *ngIf="displayDate$ | async as date">
+        {{ date }}
+      </h2>
+    </div>
+  </div>
+</div>
